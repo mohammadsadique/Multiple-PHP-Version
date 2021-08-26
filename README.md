@@ -86,4 +86,37 @@ add your server name 'localhost.php56' and save
 
 ![App Screenshot](https://raw.githubusercontent.com/mohammadsadique/Multiple-PHP-Version/main/images/host.PNG?text=Host-File-Editor)
 
-  
+
+## Add PHP Version
+
+ ```bash
+        #PHP 7.4
+        ScriptAlias /php "D:/xampp/php"
+        Action application/x-httpd-php-cgi /php/php-cgi.exe
+        <Directory "D:/xampp/php">
+            AllowOverride None
+            Options None
+            Require all denied
+            <Files "php-cgi.exe">
+                Require all granted
+            </Files>
+            SetEnv PHPRC "D:/xampp/php"
+        </Directory>
+```
+ ```bash    
+        #PHP 5.6.40
+        ScriptAlias /php56 "D:/xampp/php56"
+        Action application/x-httpd-php56-cgi /php56/php-cgi.exe
+        <Directory "D:/xampp/php56">
+            AllowOverride None
+            Options None
+            Require all denied
+            <Files "php-cgi.exe">
+                Require all granted
+            </Files>
+            SetEnv PHPRC "D:/xampp/php56"
+        </Directory>
+```
+
+![App Screenshot](https://raw.githubusercontent.com/mohammadsadique/Multiple-PHP-Version/main/images/xampp-folder.PNG?text=Xampp-Folder)
+
