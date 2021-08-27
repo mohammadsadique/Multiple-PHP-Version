@@ -89,6 +89,10 @@ add your server name 'localhost.php56' and save
 
 ## Add PHP Version
 
+You have to add some code in httpd-xampp.conf file the location 
+of these file is D:\xampp\apache\conf\extra my Xampp is store in
+D drive. 
+
  ```bash
         #PHP 7.4
         ScriptAlias /php "D:/xampp/php"
@@ -118,5 +122,48 @@ add your server name 'localhost.php56' and save
         </Directory>
 ```
 
+After adding the code now download all PHP version which you need 
+from the link https://windows.php.net/downloads/releases/archives/
+.
+
+Let suppose you download php-7.4.20-nts-Win32-vc15-x64.zip file 
+here you have to notice one thing go for nts.
+
+The vc15 stand for
+( Microsoft Visual C++ 2015 Redistributable package ) or simply 
+search vc15 download.
+
+Now extract the zip and make folder like php54 on Xampp folder
+and paste the extract file inside php54 if you downloaded php 5.4 
+version. 
+
+
+
 ![App Screenshot](https://raw.githubusercontent.com/mohammadsadique/Multiple-PHP-Version/main/images/xampp-folder.PNG?text=Xampp-Folder)
 
+Inside the php54 we saw the extracted file and folder we have to 
+focus on php.ini-development and php ini production file just copy 
+and past any one file and rename it as php.ini file.
+
+![App Screenshot](https://raw.githubusercontent.com/mohammadsadique/Multiple-PHP-Version/main/images/extractfiles.PNG?text=Extract-Files)
+
+
+Now open php.ini file in editor and search extension_dir = "ext"
+and remove ; for un comment.
+
+![App Screenshot](https://raw.githubusercontent.com/mohammadsadique/Multiple-PHP-Version/main/images/extension.png?text=Extension-dir)
+
+
+Un comment the extension which you need. save the file and your 
+are ready to go.
+
+![App Screenshot](https://raw.githubusercontent.com/mohammadsadique/Multiple-PHP-Version/main/images/extension-need.PNG?text=Extension-need)
+
+Now finally start the Xampp server and open the like we setup in 
+these artical
+
+http://localhost.php54
+
+http://localhost.php80
+
+.........
