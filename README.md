@@ -139,7 +139,17 @@ version.
 
 
 
+
 ![App Screenshot](https://raw.githubusercontent.com/mohammadsadique/Multiple-PHP-Version/main/images/xampp-folder.PNG?text=Xampp-Folder)
+
+In the next step go inside htdocs folder and create same folder
+name php54 here your all project belongs to these folder.
+Remember these is php version 5.4 so these only support php 5.4 
+projects.
+
+
+![App Screenshot](https://raw.githubusercontent.com/mohammadsadique/Multiple-PHP-Version/main/images/inside-htdoc.PNG?text=Inside-htdocs)
+
 
 Inside the php54 we saw the extracted file and folder we have to 
 focus on php.ini-development and php ini production file just copy 
@@ -167,3 +177,12 @@ http://localhost.php54
 http://localhost.php80
 
 .........
+## Feedback
+
+If you have any feedback, please reach out to us at
+
+Email: [sadiquedeveloper@gmail.com](mailto:sadiquedeveloper@gmail.com)
+
+WhatsApp Web [(91) 97705-99354](https://web.whatsapp.com/send?phone=9770599354)
+
+WhatsApp Mobile [(91) 97705-99354](https://api.whatsapp.com/send?phone=9770599354)
